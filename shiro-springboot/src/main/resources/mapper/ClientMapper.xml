@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.lzh.shirospringboot.mapper.ClientMapper">
+    <select id="queryClientByName" parameterType="String" resultType="Client">
+        select *from comment_test.client where name=#{name}
+    </select>
+</mapper>
